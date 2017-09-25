@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Script.js"></script>
+    <link rel="stylesheet" href="Style.css">
+    <title>Formulärhantering</title>
+</head>
+<body>
+<form action="">
+    <label for="name">Name *</label>
+    <input type="text" id="name" placeholder="Name" name="name" required>
+    <br>
+    <label for="nickname">Nickname *</label>
+    <input type="text" id="nickname" placeholder="Nickname" name="nickname" required>
+    <br>
+    <label for="genderMale">Male</label>
+    <input type="radio" id="genderMale" name="gender" value="Male">
+    <label for="genderFemale">Female</label>
+    <input type="radio" id="genderFemale" name="gender" value="Female">
+    <br>
+    <label for="favoriteCarBmw">Favorite car?</label>
+    <br>
+    <input type="radio" id="favoriteCarBmw" name="car" value="Bmw">
+    <label for="favoriteCarBmw">Bmw</label>
+    <input type="radio" id="favoriteCarVolvo" name="car" value="Volvo">
+    <label for="favoriteCarVolvo">Volvo</label>
+    <br>
+    <div id="bmw">
+        <input type="checkbox" id="favoriteCarBmw1" name="carModel[]" value="1-serien">
+        <label for="favoriteCarBmw1">1-serien</label>
+        <input type="checkbox" id="favoriteCarBmw2" name="carModel[]" value="2-serien">
+        <label for="favoriteCarBmw2">2-serien</label>
+        <input type="checkbox" id="favoriteCarBmw3" name="carModel[]" value="3-serien">
+        <label for="favoriteCarBmw3">3-serien</label>
+    </div>
+    <div id="volvo">
+        <input type="checkbox" id="favoriteCarVolvo1" name="carModel[]" value="c30">
+        <label for="favoriteCarVolvo1">c30</label>
+        <input type="checkbox" id="favoriteCarVolvo2" name="carModel[]" value="v70">
+        <label for="favoriteCarVolvo2">v70</label>
+        <input type="checkbox" id="favoriteCarVolvo3" name="carModel[]" value="xc90">
+        <label for="favoriteCarVolvo3">xc90</label>
+    </div>
+    <br>
+    <input type="submit" id="submit" value="Submit" >
+</form>
+
+</body>
+</html>
