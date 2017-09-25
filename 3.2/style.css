@@ -1,0 +1,12 @@
+.button {
+    background: rgba(52, 208, 193, 0.4);
+    padding:10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button.pressed {
+    background: darkolivegreen;
+}
+.button.hover {
+    background: #000000;
+}
