@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.2.1 Information sänd via formulär</title>
+</head>
+<body>
+<form action="form.php" method="get">
+    <h1>Formulär med GET-method</h1>
+    <label for="name">Namn:</label>
+    <br>
+    <input type="text" name="name" id="names" placeholder="Namn">
+    <br>
+    <label for="message">Meddelande:</label>
+    <br>
+    <textarea name="message" id="messages" placeholder="Meddelande" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit">
+</form>
+    <br>
+
+    <form action="form.php" method="post">
+    <h1>Formulär med POST-method</h1>
+    <label for="name">Namn:</label>
+    <br>
+    <input type="text" name="name" id="name" placeholder="Namn">
+    <br>
+    <label for="message">Meddelande:</label>
+    <br>
+    <textarea name="message" id="message" placeholder="Meddelande" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit">
+    </form>
+
+</body>
+</html>
