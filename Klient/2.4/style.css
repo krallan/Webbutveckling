@@ -1,0 +1,26 @@
+/**
+    Stilmall för uppgift 2.4 || validerat = JA
+ */
+
+/**
+    stilsätter alla element inom body-taggen med färgen gul, hex: #f9ff13.
+ */
+body {
+    background: #f9ff13;
+}
+
+/**
+stilsätter img-taggen som har attibutet .inline-image-left som classnamn.
+float användas för att element efter detta elementet ska flöda runt det till vänster.
+margin-right anger marginalområde på högersida av elementet som ger mellanrum mellan elementen och sina grannar.
+
+ */
+.inline-image-left {
+    float: left;
+    margin-right: 20px;
+}
+
+
+h1, h2,  h3, h4, h5, h6 {
+    clear: both;
+}

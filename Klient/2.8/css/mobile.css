@@ -1,0 +1,12 @@
+@media only screen and (max-width: 500px){
+html
+{
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1
+{
+    font-size: 2em;
+    font-weight: bold;
+    color: #e11118;
+}}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Länk till stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Marginaler, kantlinjer och padding</title>
+</head>
+<body>
+<!--En Div innehållande allmän information kring stylingen av uppgiften-->
+    <div class="firstDiv">Bordern runt detta element är stylat med en bred på 25px,
+    ett "dotted" mönster som bilar prickarna, färgen aqua och har en
+    padding på 25px som sätter avstånd till texten i elementet. Den
+    har även en margin på 25px på utsidan av bordern. Kanterna på bordern
+        är rundade mha border-radius egenskapen. Texten är även utdimmad mha opacity
+        Om texten i denna box blir för lång hjälper overflow till med att göra den scrollbar.
+    Bakgrundsfärgen är satt till olika färger mha linear-gradient där man blandar färgerna. </div>
+<!--h1 rubriktags för att illustrera visibility-->
+<h1 class="synlig">Här har vi en header som är visible</h1>
+<h1 class="osynlig">Här har vi en header som inte är visible</h1>
+    <br>
+<!-- p tag för att illustrera löpande text för uppgiften-->
+<p>Ovan har vi två headers som tar upp utrymme på sidan, men bara
+en av dem visas då den andra är satt till visibility=hidden. </p>
+    <br>
+<!--img tag för att implementera en bild på websidan.-->
+    <img src="header.jpg" alt="bild" width="350" height="150">
+    <br>
+<!-- p tag för att illustrera löpande text för uppgiften-->
+<p>Ovan visas en given del av en bild med hjälp av clip-path. bilden är 350x150px men endast 75x60px visas. </p>
+    <br>
+    <br>
+<!-- p tag för att illustrera löpande text för uppgiften-->
+<p>Detta är en p-tag, </p>
+<p>denna p-tag skall per automatik komma på ny rad</p>
+<p>, men eftersom att p-tagen är stylad till dispay: inline,</p>
+<p> så sker inte detta.</p>
+</body>
+</html>

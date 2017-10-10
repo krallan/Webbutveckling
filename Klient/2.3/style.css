@@ -1,0 +1,26 @@
+div{
+    width:350px;
+    height:100px;
+    overflow: scroll;
+    border:25px;
+    border-style: dotted;
+    border-color: aqua;
+    padding:25px;
+    margin:25px;
+    opacity: 0.7;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, #f99d12 0%, #e11118 33%, #6aa32a 33%, #00b800 66%, #e11118 33%, #6aa32a 33%);
+    box-shadow: 10px 10px 5px #888888;
+}
+h1.synlig{
+    visibility: visible;
+}
+h1.osynlig{
+    visibility: hidden;
+}
+img{
+    -webkit-clip-path: inset(0px 75px 60px 0px);
+}
+p{
+    display: inline;
+}

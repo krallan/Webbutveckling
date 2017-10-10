@@ -1,0 +1,14 @@
+div.box{
+    background: #c4964c;
+}
+#style1{
+    font: italic normal small arial, san-serif;
+    color:red;
+}
+#style2{
+    font: italic normal x-large arial, san-serif;
+    color:blue;
+}
+ul{
+    list-style: circle;
+}

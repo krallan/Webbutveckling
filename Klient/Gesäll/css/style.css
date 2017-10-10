@@ -1,0 +1,48 @@
+html,body{
+    margin:0;
+    padding:0;
+    height: 100%;
+}body {
+     background: #263238;
+     display: flex;
+     flex-direction: column;
+ }
+.mainHeader{
+    background: #1c2429;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainHeader a {
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+nav{
+    flex:1;
+}
+main{
+    flex: 1;
+    width: 90%;
+    margin: 0 auto;
+}
+.pullLeft {
+     float: left;
+ }
+.pullRight {
+    float: right;
+}
+.card{
+    background: white;
+    box-shadow: 2px 5px 13px 7px black;
+    margin-top: 70px;
+    padding: 5px;
+}
+
+.card:first-of-type {
+    margin-top: 40px;
+}
+.card h1 {
+    margin: 5px 0;
+}

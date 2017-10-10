@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>1.1 Grunderna i HTML5</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Grunderna i HTML5</h1>
+<h2>Begrepp och struktur</h2>
+<h3>Doctype</h3>
+<p>
+    &lt!DOCTYPE&gt är en instruktion till webbläsaren om vilken HTML-version sidan är skriven
+    i. &lt!DOCTYPE&gt är det första elementet som deklareras i HTML-filen och ser ut såhär: &lt!DOCTYPE HTML&gt
+</p>
+<h3>Teckenkod</h3>
+<p>
+    Teckenkodning specifierar vilken typ av teckenkodning som skall användas i dokumentet. För oss svenska programmerare
+    är det vanligast
+    att använda sig utav UTF-8 då de stöder å, ä och ö såväl som några andra icke engelska tecken. Taggen skrivs inom
+    &lthead&gt-taggen och ser ut som följande: &ltmeta
+    charset="UTF-8"&gt.
+</p>
+<h3>Språk</h3>
+<p>
+    Vilket språk man valt att koda sidan på kan vara en viktig sak att uppge då det underlättar för exempelvis
+    sökmotorer och liknande när dem skall ange
+    språk i specifika sökningar. Spårk anges genom följande attribut: "lang" i &lthtml&gt-taggen. Har man som exempel
+    kodat sin webbsida på svenska kommer den
+    se ut på följande sätt: &lthtml lang="sv"&gt
+</p>
+<h3>Validering</h3>
+<p>
+    När du kodar en webbsida finns det riktlinjer och regler som skall följas, du kan granska din kod och se till så att
+    riktlinjerna följs vis W3Cs validator som hittas här: <a href="http://validator.w3.org">W3C
+    Markup Validation Service</a>. Detta verktyg hjälper till bla med att hitta taggar som är på vift och liknande.
+</p>
+<h3>HTML-Dokumentets uppbyggnad</h3>
+<p>
+    Ett HTML-dokument byggs upp av grundläggande taggar som talar om för webläsaren hur dokumentet skall tolkas.
+    Taggarna finns i många olika
+    utförande, solotaggar: &ltbr/&gt. Partaggar, med en start och en sluttag: &ltdiv&gt&lt/div&gt. Ett HTML-dokument
+    skall innehålla vissa partaggar. Strukturen på dessa taggar ser ut som följande:
+    &lthtml&gt&lthead&gt&lt/head&gt&ltbody&gt&lt/body&gt&lt/html&gt. Med aningen bättre indentering.
+</p>
+<h2>Taggar</h2>
+<h3>&lthtml&gt</h3>
+<p>Talar om för webläsaren att dokumentet innehåller html-kod.</p>
+<h3>&lthead&gt</h3>
+<p>
+    Denna tag ger en beskrivning av webbplatsen med hjälp utav taggar som: &lttitle&gt, &ltmeta&gt, &ltstyle&gt o.s.v.
+</p>
+<h3>&ltbody&gt</h3>
+<p>Body-taggen innehåller allt som skall visas på sidan.</p>
+<h3>&lttitle&gt</h3>
+<p>Denna taggen anger titel på sidan.</p>
+<h3>&ltmeta&gt</h3>
+<p><b>http-equiv</b> - Den första informationen som webbläsaren tar emot. Exempel på detta kan vara att webbplatsen
+    skall uppdateras vid en
+    viss tidpunkt.</p>
+<p><b>author</b> - Author-taggen anger författaren för dokumentet &ltmeta name="author" content="Linus Nilsson"&gt</p>
+<p><b>description</b> - I detta fält har man möjlighet att ge en beskrivning av innehåller på webbplatsen eller dess
+    funktionalitet,
+    beskrivningen används bland annat av sökmoterer för att ge användaren en beskrivning av innehållet. Taggen kan se ut
+    på följande vis: &ltmeta name="description" content="Vad hittar man för kul här?"&gt</p>
+<p><b>generator</b> - Denna tag används ifall man användt en specifik editor för skapandet av webbplatsen,
+    exempel på detta kan vara FrontPage eller DreamWeaver&ltmeta name="generator" content="FrontPage 4.0"&gt</p>
+<p><b>keywords</b> - Nyckelord som beskriver hemsidan. Dessa "nyckelord" används av diverse sökmotorer för att reda ut
+    vad sidan innehåller
+    och ger användare träffar på dessa "nyckelord" &ltmeta name="keywords" content="HTML, tags, uppgift, nyckelord"&gt
+</p>
+<p><b>robots</b> - Används för att ge information till sökmotorspindlar. För att t.ex. indexera sidan på en
+    sökmotor. &ltmeta name="robots" content="index, follow" &gt</p>
+<h3>Text</h3>
+<p>
+<p><b>blockquote</b> - Taggen används för att citera en specifik källa, ser ut på följande vis:
+<blockquote>In three words I can sum up everything I've learned about life: it goes on.
+</blockquote>
+</p>
+<p><b>h1 - h6</b> - Dessa taggar används för att ange huvudrubriker och flera lager av underrubriker, ser ut på följande
+    vis:
+<h1>Rubrik
+    1</h1>
+<h2>Rubrik 2</h2>
+<h3>Rubrik 3</h3><h4>Rubrik 4</h4><h5>Rubrik 5</h5><h6>Rubrik 6</h6></p>
+<p><b>p</b> - Definierar en paragraf. Ser ut såhär:
+<p>Här är en paragraf.</p></p>
+<p><b>pre</b> - Förformaterad text. Den behåller radbrytiningar och mellanslag som annars kanske skulle
+    renderas bort.
+</p>
+<p><b>span</b> - Används för att styla text. I grunden har den neutralt utseende, men kan stylas på exempelvis följande
+    sätt:<br/> <code>&ltp&gtJag gillar att lira  &ltspan
+        style="color:green"&gt fotboll&lt/span&gt.&lt/p&gt </code><br/> Resultatet kommer se ut på följande vis:
+<p>Jag gillar att lira <span
+        style="color:blue">fotboll</span>.</p></p>
+<h3>Hypertext</h3>
+<p>
+    Hypertext är ett navigeringsverktyg inom den nuvarande webbsidan eller navigering till andra webbsidor med hjälp av länkar.
+    Hypertext defineras med en &lta&gt tag. En tom hypertext-tag fyller ingen funktion, men med ett  <code>href</code> attribut blir
+    det en länk.<br/>
+    En relativ länk används oftast inom navigering på den nuvarande webbsidan, Man definerar vilka mappar man behöver gå igenom för att ta sig till
+    önskad destination på webbsidan. Det kan till exempel se ut på följande sätt:
+    <code>&lta href="mapp1/mapp2/sida.html"&gtLänk&lt/a&gt</code>
+    <br/>En absolut länk används när användaren skall hänvisas till en annan webbsida, detta görs genom att man anropar http-adressen för den önskade
+    destinationen. Det kan se ut på följande vis: <code>&lta
+    href="http://facebook.com"&gtLänk&lt/a&gt</code>
+    <br/>Ett ankare används för att navigera sig inom det nuvarande dokumentet. Kan t.ex. användas för att hitta ett kortare stycke i en lång text.
+    Länken kan se ut på följande vis: <code>&lta href="#namn_pa_ankare"&gtLänk&lt/a&gt</code>.
+    Ankarets destination kan se ut på följande vis: <code>&lta name="namn_pa_ankare"&gtLänk&lt/a&gt</code>
+    <br/>En bildlänk är precis som namnet säger en länk där man istället för text använder en bild. Exempel: <code>&lta
+    href="http://facebook.com"&gt&ltimg src="pic.png"&gt&lt/a&gt</code>
+    <br/>Man kan även länka ett e-post protokoll med en specifik e-post adress mha mailto-länk : <code>&lta href="mailto:min@epost.se"&gtMail&lt/a&gt</code>
+</p>
+<h3>Listor</h3>
+<p>
+    Html innehåller en del olika listor som används för att på olika sätt lista diverse innehåll:
+<ul>
+    <li>
+        <b>&ltdl&gt</b> -  Beskrivningslista. Kod:<br/>
+        <code>
+            &ltdl&gt<br/>
+            &ltdt&gtStenen&lt/dt&gt<br/>
+            &ltdd&gtKommer sjunka&lt/dd&gt<br/>
+            &ltdt&gtPappert&lt/dt&gt<br/>
+            &ltdd&gtKan flyta&lt/dd&gt<br/>
+            &lt/dl&gt
+        </code>
+        <br/>&ltdt&gt är namnet och &ltdd&gt är beskrivningen. Resultatet blir följande:
+        <dl>
+            <dt>Stenen</dt>
+            <dd>Kommer sjunka</dd>
+            <dt>Pappret</dt>
+            <dd>Kan flyta</dd>
+        </dl>
+
+    </li>
+    <li>
+        <b>&ltol&gt</b> - Är en ordnad lista. Kod:<br/>
+        <code>
+            &ltol&gt<br/>
+            &ltli&gtUno&lt/li&gt<br/>
+            &ltli&gtDos&lt/li&gt<br/>
+            &ltli&gtTres&lt/li&gt<br/>
+            &lt/ol&gt
+        </code>
+        <br/>Kommer se ut på följande vis:
+        <ol><br/>
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+        </ol>
+    </li>
+    <li>
+        <b>&ltul&gt</b> - Är en oordnad lista. Kod:<br/>
+        <code>
+            &ltul&gt<br/>
+            &ltli&gtUno&lt/li&gt<br/>
+            &ltli&gtDos&lt/li&gt<br/>
+            &ltli&gtTres&lt/li&gt<br/>
+            &lt/lu&gt
+        </code>
+        <br/>Kommer se ut på följande vis:
+        <ul>
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+        </ul>
+    </li>
+</ul>
+</p>
+<h3>Tabeller</h3>
+<ul>
+    <li><b>caption</b> - Rubrik för en tabell, kommer alltid efter table-taggen.</li>
+    <li><b>table</b> - Denna tag samlar samtliga table-taggar.</li>
+    <li><b>td</b> - Definierar en tabellkolumn.</li>
+    <li><b>th</b> - Rubriken för en kolumn.</li>
+    <li><b>tr</b> - Definierar en tabellrad.</li>
+</ul>
+
+
+<h3>Bilder</h3>
+<p>
+    För att ladda in en bild på en webbsida använder man &ltimg&gt taggen med ett src attribut. Src i detta fallet blir sökvägen till bilden.
+    Som nämnt ovan kan man även använda en &lta&gt för att göra en länk utav bilden.
+    <br/> Exempel: <code>&ltimg src="pic.jpeg"&gt</code>
+</p>
+<h3>&ltmap&gt/&ltarea&gt</h3>
+<p>
+    Om man vill ha en specifik del utav en bild klickbar kan man använda sig utav denna tag. Bilden defineras som ovan nämnt med img-taggen och sedan lägger man på usemap
+    attributet.
+    <br/>Efter detta används Shape-attributet för att  definiera vilken form av bilden som skall vara klickbar.
+</p>
+</body>
+</html>

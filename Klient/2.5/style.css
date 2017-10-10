@@ -1,0 +1,79 @@
+
+a:link {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+a:hover {
+    color: white;
+    background-color: pink;
+
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: white;
+    background: black;
+
+}
+
+a.cursor {
+    cursor: crosshair;
+}
+
+a.button:link {
+    background: darkgrey;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background: blue;
+    color: black;
+
+}
+
+a.button:visited {
+    color: green;
+
+}
+
+a.button:active {
+    color: white;
+    background: black;
+}
+
+.link-image {
+    background: url("res/bild-regular.png");
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border: 2px solid red;
+
+}
+
+.link-image:hover {
+    background: url("res/bild-hover.png");
+
+}
+
+.link-image:visited {
+    border: 2px solid black;
+    background: url("res/bild-regular.png");
+
+}
+
+.link-image:active {
+    background: url("res/bild-active.png");
+
+}
+
+
+
+
+
