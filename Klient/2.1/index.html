@@ -18,7 +18,7 @@
     CSS-dokument som alla HTML-sidor använder sig av behöver du bara ändra den gröna färgen till blå på ett ställe och
     ändringen kommer ske på alla HTML-sidor. Ett externt style sheet-dokument ser även till att dokumentstorleken går
     ner för HTML-dokumenten eftersom man flyttar ut kod från massor av dokument och lagrar den i ett eget dokument.
-    Detta kan kallas för <abbr>DRY<abbr>-kod (Don't repeat yourself). Ett externt style sheet får även hemsidor att
+    Detta kan kallas för <abbr>DRY</abbr>-kod (Don't repeat yourself). Ett externt style sheet får även hemsidor att
     ladda snabbare eftersom webbläsaren sparar style sheetet i chachen.
 </p>
 <h2>Arv</h2>
@@ -52,62 +52,6 @@
         <li>ID-Selektor - 100 poäng</li>
         <li>Inline - 1000 poäng</li>
     </ul>
-    Exemple:
-    <table>
-        <tr>
-            <th>Selektor</th>
-            <th>Värde</th>
-            <th>Noggrannhet</th>
-        </tr>
-        <tr>
-            <td>*</td>
-            <td>a=0 b=0 c=0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>LI</td>
-            <td>a=0 b=0 c=1</td>
-            <td> 1</td>
-        </tr>
-        <tr>
-            <td>UL LI</td>
-            <td>a=0 b=0 c=2</td>
-            <td> 2</td>
-        </tr>
-        <tr>
-            <td>UL OL+LI</td>
-            <td>a=0 b=0 c=3</td>
-            <td> 3</td>
-        </tr>
-        <tr>
-            <td>H1 + *[REL=up]</td>
-            <td>a=0 b=1 c=1</td>
-            <td> 11</td>
-        </tr>
-        <tr>
-            <td>UL OL LI.red</td>
-            <td>a=0 b=1 c=3</td>
-            <td> 13</td>
-        </tr>
-        <tr>
-            <td>LI.red.level</td>
-            <td>a=0 b=2 c=1</td>
-            <td> 21</td>
-        </tr>
-        <tr>
-            <td>#x34y</td>
-            <td>a=1 b=0 c=0</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>#s12:not(FOO)</td>
-            <td>a=1 b=0 c=1</td>
-            <td>101</td>
-        </tr>
-    </table>
-    Det detta system menar är att om man ger ett element ett ID med tillhörande css-stil så är chansen större att att
-    man vill styla elementet efter ID-stilen än tagg-stilen.
-    </p>
 </li>
 <li>
     <p>
@@ -161,5 +105,14 @@
     klass-selektor osv. Efter det startar man deklarationsblocket, där anger man olika stil-ändringar som ska gälla för
     selektorn. Se figur 1 för en beskrivning av detta.
 </p>
+<h2>Andra uppgifter</h2>
+<ul id="linkList">
+    <li><a href="/Klient/2.2/index.html">2.2 Text och listor</a></li>
+    <li><a href="/Klient/2.3/index.html">2.3 Marginaler, kantlinjer och padding</a></li>
+    <li><a href="/Klient/2.4/index.html">2.4 Bilder och bakgrunder</a></li>
+    <li><a href="/Klient/2.5/index.html">2.5 Navigering</a></li>
+    <li><a href="/Klient/2.6/index.html">2.6 Tabeller och formulär</a></li>
+    <li><a href="/Klient/2.7/index.html">2.7 Sidlayout</a></li>
+</ul>
 </body>
 <html>

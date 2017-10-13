@@ -1,12 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Krallan
- * Date: 2017-09-26
- * Time: 11:02
- */
-
-
 if($_FILES['file']['error']==UPLOAD_ERR_OK){
    $type = $_FILES['file']['type'];
    $size = $_FILES['file']['size'];

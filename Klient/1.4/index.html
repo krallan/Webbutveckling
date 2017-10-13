@@ -5,55 +5,58 @@
     <title>1.4 Formulär</title>
 </head>
 <body>
-<form action="http://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.1/perl/example.cgi" method="get">
+<form action="https://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.1/perl/example.cgi" method="get">
     <fieldset>
         <legend>Registrera</legend>
-        <label for="name">Namn: </label><input id="name" name="name" type="text" placeholder="Förnamn" autofocus required><br>
-        <label for="pass">Lösenord: </label><input id="pass" name="pass" type="password" pattern="[a-z]+" title="Får bara innehålla små bokstäver" required ><br>
-        <label for="desc">Berätta om dig själv:</label><br>
+        <label for="name">Namn: </label><input id="name" name="name" type="text" placeholder="Förnamn" autofocus
+                                               required><br>
+        <label for="pass">Lösenord: </label><input id="pass" name="pass" type="password" placeholder="Lösenord"
+                                                   title="Endast små bokstäver" pattern="[a-z]+" required><br>
+        <label>Språk som du talar flyttande?</label><br>
+        <input type="checkbox" id="svenska" name="lang" value="php"><label for="svenska">Svenska</label>
+        <input type="checkbox" id="engelska" name="lang" value="ruby"><label for="engelska">Engelska</label>
+        <input type="checkbox" id="tyska" name="lang" value="python"><label for="tyska">Tyska</label>
+        <input type="checkbox" id="spanska" name="lang" value="java"><label for="spanska">Spanska</label><br>
+        <label>Vilket är ditt favoritspråk?</label><br>
+        <input type="radio" name="favlang" id="r_svenska" value="php"><label for="svenska">Svenska</label>
+        <input type="radio" name="favlang" id="r_engelska" value="ruby"><label for="engelska">Engelska</label>
+        <input type="radio" name="favlang" id="r_tyska" value="python"><label for="tyska">Tyska</label>
+        <input type="radio" name="favlang" id="r_spanska" value="java"><label for="spanska">Spanska</label><br>
+        <br>
+        <label for="desc">Vad har du för intresse?</label><br>
         <textarea id="desc">
 
-				</textarea><br>
-        <label>Vilka språk kan du?</label><br>
-        <input type="checkbox" id="php" name="lang" value="php"><label for="php">PHP</label>
-        <input type="checkbox" id="ruby" name="lang" value="ruby"><label for="ruby">Ruby</label>
-        <input type="checkbox" id="python" name="lang" value="python"><label for="python">Python</label>
-        <input type="checkbox" id="java" name="lang" value="java"><label for="java">Java</label><br>
-        <label>Vilket är ditt favoritspråk?</label><br>
-        <input type="radio" name="favlang" id="php_r" value="php"><label for="php">PHP</label>
-        <input type="radio" name="favlang" id="ruby_r" value="ruby"><label for="ruby">Ruby</label>
-        <input type="radio" name="favlang" id="python_r" value="python"><label for="python">Python</label>
-        <input type="radio" name="favlang" id="java_r" value="java"><label for="java">Java</label><br>
-        <br>
+				</textarea>
         <br>
         <label for="email">E-Post: </label>
-        <input type="email" title="Din E-Post" id="email" name="email"><br>
-        <label for="hp">Din hemsida: </label>
-        <input type="url" id="hp" name="hp"><br>
+        <input type="email" title="E-post adress" id="email" name="email"><br>
         <label for="age">Ålder: </label>
         <input type="number" id="age" name="age" min="0" max="100" step="1"><br>
-        <label for="range">Skala 0-9, hur duktig är du på ditt favoritspråk? </label>
+        <label for="fw">Favorit webbplats: </label>
+        <input type="url" id="fw" name="fw"><br>
+        <label for="range">På en skala av 0-9, hur bra talar du ditt favoritspråk? </label>
         <input type="range" id="range" name="range" min="0" max="9" step="3"><br>
-        <label for="bday">När föddes du? </label>
-        <input type="datetime" id="bday" name="bday"><br>
-        <label for="today">Vilken dag är det idag? </label>
-        <input type="date" id="today" name="today" value="2013-11-22"><br>
-        <label for="favm">Vilken är din favoritmånad? </label>
-        <input type="month" id="favm" name="favm"><br>
-        <label for="favv">Vilken är din favoritvecka? </label>
-        <input type="week" id="favv" name="favv"><br>
-        <label for="favt">Vilken är din favorittid? </label>
-        <input type="time" id="favt" name="favt"><br>
-        <keygen name="security"><br>
-            <label for="favb">Vilken är din favoritwebläsare: </label>
-            <input type="text" name="favb" id="favb" list="browsers">
-            <datalist id="browsers">
-                <option value="Internet Explorer">
-                <option value="Firefox">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
-            </datalist><br>
+        <label for="birthday">Vilket år är du född? </label>
+        <input type="datetime" id="birthday" name="birthday"><br>
+        <label for="today">Vilken dag skapades detta dokument? </label>
+        <input type="date" id="today" name="today" value="2017-10-09"><br>
+        <label for="bornm">Vilken månad är du född i? </label>
+        <input type="month" id="bornm" name="bornm"><br>
+        <label for="vaca">Vilken vecka brukar din semester starta? </label>
+        <input type="week" id="vaca" name="vaca"><br>
+        <label for="bedT">>När brukar du gå och lägga dig? </label>
+        <input type="time" id="bedT" name="bedT"><br>
+        <br>
+            <label for="favGame">Vad är ditt favorit dataspel? </label>
+            <input type="text" name="favGame" id="favGame" list="Games">
+            <datalist id="Games">
+                <option value="PlayerUnknown's Battlegrouds">
+                <option value="World of Warcraft">
+                <option value="Counter Strike">
+                <option value="Age of Empire">
+                <option value="Fifa 18">
+            </datalist>
+            <br>
             <label for="favbil">Favoritbil?</label>
             <select id="favbil" name="favbil">
                 <optgroup label="Svenska Bilar">
@@ -68,12 +71,12 @@
             <br>
             <br>
             <input type="submit">
-            <input type="image" width="100" src="knapp.jpg" alt="Submit Button">
             <input type="reset">
-            <input type="button" value="Inget händer!">
+            <input type="button" value="Värdelös knapp">
     </fieldset>
 </form>
-<form method="post" enctype="multipart/form-data" action="http://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.2/perl/example.cgi">
+<form method="post" enctype="multipart/form-data"
+      action="http://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.2/perl/example.cgi">
     <input type="file" id="file" name="file">
     <input type="submit" value="Ok">
 </form>

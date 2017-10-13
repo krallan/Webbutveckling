@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Krallan
- * Date: 2017-09-27
- * Time: 12:59
- */
 $db_host = "atlas.dsv.su.se";
 $db_name = "db_17391005";
 $db_username = "usr_17391005";

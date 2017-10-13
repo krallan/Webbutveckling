@@ -1,18 +1,18 @@
 
 a:link {
-    color: blue;
+    color: black;
     text-decoration: underline;
 
 }
 
 a:hover {
     color: white;
-    background-color: pink;
+    background-color: greenyellow;
 
 }
 
 a:visited {
-    color: green;
+    color: purple;
 }
 
 a:active {
@@ -26,34 +26,34 @@ a.cursor {
 }
 
 a.button:link {
-    background: darkgrey;
+    background: lightblue;
     padding: 15px;
     color: white;
     text-decoration: none;
 }
 
 a.button:hover {
-    background: blue;
-    color: black;
+    background: darkgray;
+    color: white;
 
 }
 
 a.button:visited {
-    color: green;
+    color: black;
 
 }
 
 a.button:active {
     color: white;
-    background: black;
+    background: red;
 }
 
 .link-image {
     background: url("res/bild-regular.png");
     display: inline-block;
-    width: 250px;
-    height: 250px;
-    border: 2px solid red;
+    width: 350px;
+    height: 150px;
+    border: 3px solid darkgray;
 
 }
 
@@ -63,7 +63,7 @@ a.button:active {
 }
 
 .link-image:visited {
-    border: 2px solid black;
+    border: 3px solid lightcoral;
     background: url("res/bild-regular.png");
 
 }

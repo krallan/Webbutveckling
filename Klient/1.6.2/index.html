@@ -1,5 +1,3 @@
-<!---HTML5-dokumentet använder audio/video taggar för uppspelning av video/musik. Musik och video som används är royaltyfri och ingen copyright || Validerat = JA -->
-
 <!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -7,24 +5,16 @@
     <title>1.6.2 Progressivt nerladdning media</title>
 </head>
 <body>
-
-<!---Rubrik för musik. Innehåll: audiotagg med controllattribut för pause/start och volym-höj/sänkning. Source tag med attribut src uppger källan för musikfilen och type uppger filformatet-->
 <h1>Musik</h1>
 <audio controls>
-    <!--Attributet source hämtar källan från paketet res-->
-    <source src="res/music.mp3" type="audio/mpeg">
-    <source src="res/music.ogg" type="audio/ogg">
-    <!---Källa: https://soundcloud.com/ehrling/ehrling-best-friend || copyright fri musik || nedladdad fil i res-mapp -->
+    <source src="res/Sound.mp3" type="audio/mpeg">
+    <source src="res/Sound.ogg" type="audio/ogg">
 
 </audio>
-
-<!---Rubrik för video. Innehåll: videotagg med controllattribut för pause,start och volym höj/sänkning. Width/height för fönstretsstorlek för videon. Source-tag med attribut src uppger källan för videofilen och type uppger filformatet -->
 <h1>Video</h1>
 <video width="320" height="240" controls>
-    <!--Attributet source hämtar källan från paketet res-->
-    <source src="res/video.mp4" type="video/mp4">
-    <source src="res/video.ogv" type="video/ogg">
-    <!---Källa: https://videos.pexels.com/videos/aerial-shot-of-mountain-and-ocean-1469 || copyright fri video || nedladdad fil i res-mapp -->
+    <source src="res/clip.mp4" type="video/mp4">
+    <source src="res/clip.ogv" type="video/ogg">
 </video>
 
 

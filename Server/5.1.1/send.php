@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Krallan
- * Date: 2017-09-27
- * Time: 10:31
- */
 echo "<pre>";
 print_r($_POST);
 use PHPMailer\PHPMailer\PHPMailer;

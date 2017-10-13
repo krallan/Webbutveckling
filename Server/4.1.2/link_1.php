@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Krallan
- * Date: 2017-09-26
- * Time: 12:52
- */
 $nickname = $_POST["nickname"];
 ?>
 <!DOCTYPE html>

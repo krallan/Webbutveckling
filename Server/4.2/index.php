@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Krallan
- * Date: 2017-09-26
- * Time: 13:05
- */
 setcookie("name", "Cookiecream", time() + 60*60*3);
 setcookie("time", date(DATE_ISO8601, time()),time() + 60*60*3 );
 ?>

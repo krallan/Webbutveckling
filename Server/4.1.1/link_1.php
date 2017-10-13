@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Krallan
- * Date: 2017-09-26
- * Time: 12:16
- */
+
 $character = $_GET['character'];
 ?>
 <!DOCTYPE html>
